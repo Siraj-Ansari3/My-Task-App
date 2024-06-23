@@ -1,0 +1,171 @@
+.card {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: #fff;
+    padding: 15px;
+    gap: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.cardContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* background-color: #e0a800; */
+}
+
+.cardContent input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.cardContent span {
+    flex: 1;
+    font-size: 16px;
+}
+
+.cardContent input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.cardContent input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+.cardButtons {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cardButtons .editBtn,
+.cardButtons .deleteBtn,
+.cardButtons .saveBtn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.cardButtons .editBtn {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.cardButtons .editBtn:hover {
+    background-color: #e0a800;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardButtons .deleteBtn {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.cardButtons .deleteBtn:hover {
+    background-color: #c82333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardButtons .saveBtn {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.cardButtons .saveBtn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .cardContent {
+        flex: 2;
+    }
+
+    .cardButtons {
+        flex: 1;
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card {
+        max-width: 700px;
+    }
+
+    .cardContent span {
+        font-size: 18px;
+    }
+
+    .cardContent input[type="text"] {
+        font-size: 18px;
+    }
+
+    .cardButtons .editBtn,
+    .cardButtons .deleteBtn,
+    .cardButtons .saveBtn {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        max-width: 900px;
+    }
+
+    .cardContent span {
+        font-size: 20px;
+    }
+
+    .cardContent input[type="text"] {
+        font-size: 20px;
+    }
+
+    .cardButtons .editBtn,
+    .cardButtons .deleteBtn,
+    .cardButtons .saveBtn {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardContent span {
+        font-size: 14px;
+    }
+
+    .cardContent input[type="text"] {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .cardButtons .editBtn,
+    .cardButtons .deleteBtn,
+    .cardButtons .saveBtn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
