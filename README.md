@@ -1,2 +1,1 @@
-"# My-Task-App" 
-"# My-Task-App" 
+I have developed a modern, fully functional web application using React that serves as a task manager. This application allows users to add, delete, and edit tasks seamlessly. Designed with a focus on usability and responsiveness, it ensures a smooth experience across all devices. My goal was to create an intuitive and efficient tool for managing tasks, using React's powerful features to provide a dynamic and engaging user interface.
